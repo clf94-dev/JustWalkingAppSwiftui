@@ -11,6 +11,7 @@
 		32E1322E2A6CFAC5009D326B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E1322D2A6CFAC5009D326B /* ContentView.swift */; };
 		32E132302A6CFAC7009D326B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E1322F2A6CFAC7009D326B /* Assets.xcassets */; };
 		32E132332A6CFAC7009D326B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E132322A6CFAC7009D326B /* Preview Assets.xcassets */; };
+		32E1323D2A6CFBDF009D326B /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E1323C2A6CFBDF009D326B /* HealthStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		32E1322D2A6CFAC5009D326B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32E1322F2A6CFAC7009D326B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32E132322A6CFAC7009D326B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32E1323C2A6CFBDF009D326B /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,10 @@
 		32E1322A2A6CFAC5009D326B /* JustWalkingApp */ = {
 			isa = PBXGroup;
 			children = (
+				32E1323B2A6CFBB8009D326B /* ViewModel */,
+				32E1323A2A6CFBB1009D326B /* View */,
+				32E132392A6CFBA4009D326B /* Model */,
 				32E1322B2A6CFAC5009D326B /* JustWalkingAppApp.swift */,
-				32E1322D2A6CFAC5009D326B /* ContentView.swift */,
 				32E1322F2A6CFAC7009D326B /* Assets.xcassets */,
 				32E132312A6CFAC7009D326B /* Preview Content */,
 			);
@@ -65,6 +69,29 @@
 				32E132322A6CFAC7009D326B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		32E132392A6CFBA4009D326B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32E1323C2A6CFBDF009D326B /* HealthStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32E1323A2A6CFBB1009D326B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32E1322D2A6CFAC5009D326B /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32E1323B2A6CFBB8009D326B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32E1322E2A6CFAC5009D326B /* ContentView.swift in Sources */,
+				32E1323D2A6CFBDF009D326B /* HealthStore.swift in Sources */,
 				32E1322C2A6CFAC5009D326B /* JustWalkingAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

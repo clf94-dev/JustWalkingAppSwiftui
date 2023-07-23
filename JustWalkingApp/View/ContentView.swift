@@ -6,8 +6,14 @@
 //
 
 import SwiftUI
+import HealthKit
 
 struct ContentView: View {
+    private var healthStore: HealthStore?
+    
+    init () {
+        healthStore = HealthStore()
+    }
     var body: some View {
         VStack {
             Image(systemName: "globe")
