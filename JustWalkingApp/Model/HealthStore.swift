@@ -17,4 +17,14 @@ class HealthStore {
         }
     }
     
+    func requestAuthoritation(completion: @escaping (Bool) -> Void){
+        let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
+        guard let healthStore = self.healthStore
+        else { return completion(false) }
+        
+        healthStore.requestAuthorization(toShare: [], read: [stepType]) { (sucess, error) in
+            completion(sucess)
+        }
+    }
+    
 }
