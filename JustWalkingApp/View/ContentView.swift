@@ -17,15 +17,16 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Hello, world!")
+                .onAppear{
+                    if let healthStore = healthStore {
+                        healthStore.requestAuthoritation { success in
+                            
+                        }
+                    }
+                }
         }
         .padding()
-        .onAppear{
-            if let healthStore = healthStore {
-                healthStore.requestAuthoritation { success in
-                    
-                }
-            }
-        }
+        
     }
 }
 
