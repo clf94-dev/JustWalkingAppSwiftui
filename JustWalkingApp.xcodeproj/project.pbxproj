@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32D77FD42A6D3D470047B057 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D77FD32A6D3D470047B057 /* Step.swift */; };
 		32E1322C2A6CFAC5009D326B /* JustWalkingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E1322B2A6CFAC5009D326B /* JustWalkingAppApp.swift */; };
 		32E1322E2A6CFAC5009D326B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E1322D2A6CFAC5009D326B /* ContentView.swift */; };
 		32E132302A6CFAC7009D326B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E1322F2A6CFAC7009D326B /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32D77FD32A6D3D470047B057 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		32E132282A6CFAC5009D326B /* JustWalkingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustWalkingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E1322B2A6CFAC5009D326B /* JustWalkingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustWalkingAppApp.swift; sourceTree = "<group>"; };
 		32E1322D2A6CFAC5009D326B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,7 +78,7 @@
 		32E132392A6CFBA4009D326B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				32E1323C2A6CFBDF009D326B /* HealthStore.swift */,
+				32D77FD32A6D3D470047B057 /* Step.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +94,7 @@
 		32E1323B2A6CFBB8009D326B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				32E1323C2A6CFBDF009D326B /* HealthStore.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32E1322E2A6CFAC5009D326B /* ContentView.swift in Sources */,
+				32D77FD42A6D3D470047B057 /* Step.swift in Sources */,
 				32E1323D2A6CFBDF009D326B /* HealthStore.swift in Sources */,
 				32E1322C2A6CFAC5009D326B /* JustWalkingAppApp.swift in Sources */,
 			);
