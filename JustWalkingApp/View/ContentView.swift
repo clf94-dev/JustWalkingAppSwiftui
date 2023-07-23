@@ -20,7 +20,14 @@ struct ContentView: View {
                 .onAppear{
                     if let healthStore = healthStore {
                         healthStore.requestAuthoritation { success in
-                            
+                            if success {
+                                healthStore.calculateSteps { statisticsCollection in
+                                    if let statisticsCollection = statisticsCollection {
+                                        // update UI que data
+                                        print (statisticsCollection)
+                                    }
+                                }
+                            }
                         }
                     }
                 }
